@@ -6,29 +6,31 @@
 body {
     color: rgb(58, 74, 141);
     font-family: 'Josefin Sans';
-    background: radial-gradient(circle, rgb(121, 0, 24) 20%, rgb(155, 36, 0), rgb(23, 59, 9));
+    background: radial-gradient(circle, white, rgb(172, 172, 172), rgb(0, 0, 0)90%);
     overflow:hidden;
 }
 
 div {
-    border: dotted rgb(4, 3, 73) 10px;
+    border: ridge rgb(62, 62, 112);
     text-align: center;
     border-radius: 100px;
-    border-width: 15px;
+    border-width: 1px;
+    box-shadow: 2px 2px 10px 10px white;
     width: 75%;
-    color: teal;
+    color: rgb(68, 68, 68);
     margin-left: 150px;
     position:relative;
-    bottom:100px;
+    top:100px;
+    text-shadow: 1px 1px white;
 }
 h1 {
     /* stroke: red;
     stroke-width: 90px;
     stroke-linejoin:round; */
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px rgb(202, 202, 202);
     font-size: 52px;
-    color: rgb(255, 127, 53);
-    background-color: teal;
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 60, 60);
     border:rgb(202, 216, 216);
     border-radius: 75px;
     border-width: 200px;
@@ -38,22 +40,25 @@ h1 {
     font-family: Trebuchet;
     width: 38%;
     text-decoration: underline;
-    text-decoration-color: rgb(18, 65, 65);
+    text-decoration-color: rgb(255, 255, 255);
     position:relative;
     bottom: 30px;   
-    box-shadow: 0px 2px;
+    box-shadow: 0px 2px white;
     
 }
 h2 {
+    position:relative;
+    bottom:30px;
+    left:500px;
     font-family: 'Times New Roman';
     font-size: 50px;
     font-weight: normal;
     float: left;
-    margin-top: 85px;
-    padding-left: 10px;
+    /* margin-top: 85px;
+    padding-left: 10px; */
     color: black;
-    text-shadow: 2px 1px orange;
-    background: radial-gradient(circle, white 50%, orange);
+    text-shadow: 2px 1px rgb(27, 27, 27);
+    background: radial-gradient(circle, white 50%, rgb(145, 145, 145));
     border-radius: 25px;
     border: 2px white;
 
@@ -62,7 +67,7 @@ h2 {
 h3 {
     position:relative;
     right: 25px;
-    bottom: 30px;
+    bottom: 40px;
 }
 .smaller-image {
     width: 500px;
@@ -85,20 +90,29 @@ a {
 }
 h4 {
     position:relative;
-    bottom:65px;
+    top:95px;
+    right:150px;
     text-shadow: 1px 1px black;
+}
+marquee {
+    position:relative;
+    top:130px;
+    /* width:70%; */
+    margin-left: 400px;
+    margin-right:400px;
+    font-weight: bolder;
 }
 </style>
 <body>
     <h1 style="border: solid rgb(202, 216, 216);">Curriculum Vitae</h1>
-    
+    <hr style="width:70%">
     <h2 style="text-align:center;" class="inset">Burlington Code<br />Academy</h2>
 
     <h3>
             <a href="aboutme.html">About Me</a>
             <a href="projects.html">Projects</a>
     </h3>
-    <img src="https://bit.ly/2MC8bQA" img id="img" class="smaller-image";    alt="A calm brook">
+   
         
     <h4 style="text-align:center; font-family:'Quicksand'; font-size:32px; font-weight:lighter">Greetings, my name is Matt Layden.</h4>
 <br />
@@ -110,6 +124,7 @@ h4 {
 
     <p>To contact me, feel free to call or text (802)353-4765. If I do not answer, please leave a message or email me at mattlayden1@aol.com.</p>
 </div>
+<marquee behavior="scroll" direction="left">Thank you for visiting! </marquee>
 </body>
 
 
